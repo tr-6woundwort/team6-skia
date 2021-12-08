@@ -1,0 +1,8 @@
+自2005年Skia被Google收购后，一直相当神秘低调，直到2007年初，Skia GL相关的源代码才被揭露，
+作为Google Android平台的图形引擎，稍后的Google Chrome浏览器也采用Skia引擎。随着Android与
+Chrome (开放版本称为"Chromium")两大专案公布源代码后，Skia也一并公开原始源代码，以Apache 
+License v2发布(注意，这意味着与GPLv2授权不相容) ，而Android与Chrome的源代码库中都有一份
+[Skia]的复制，因需求不同，做了部份的修改，比方说Chrome专案底下的 [chrome/trunk/src/skia]，
+需要注意的是，Skia本身是不涉及底层环境，如Linux Framebuffer或Gtk+衔接的处理，这也是何以
+Android (透过Linux Framebuffer)与Chrome (开发中的Linux版本使用Gtk+)需要提供一份修改，以
+便系统接轨。
